@@ -49,10 +49,7 @@ period (Q1), while keeping the dataset manageable in scope.
 
 ### Data Organization
 
-Each quarter is a separate CSV file in long format (one row per 
-ride). The 2019 Q1 and 2020 Q1 files use different column names 
-and fields (e.g., `usertype` vs `member_casual`, `tripduration` 
-missing in 2020), which will be standardized during Process.
+Each quarter is a separate CSV file in long format.
 
 ### ROCCC Check
 
