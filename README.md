@@ -23,12 +23,10 @@ rather than analytical process.
 
 ## Possible Metrics
 
-- tripduration / started_at − ended_at
-- trip_id / ride_id
-- start_time / started_at
-- start_time / started_at
-- from_station_name / start_station_name
-- to_station_name / end_station_name
-- usertype / member_casual
+- tripduration / started_at to ended_at could produce **Total number of rides**
+- trip_id / ride_id could produce **Total rides**
+- start_time / started_at could produce **Number of rides by day of week** or **Number of rides by hour**
+- to_station_name / end_station_name could produce **Number of rides originating from each station**
+- usertype / member_casual **could be used as comparison variable**
 
 
