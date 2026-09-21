@@ -1,6 +1,6 @@
 # Cyclist Bike Share Analysis 
 
-Data analysis of Cyclistic bike-share usage to understand how casual riders and annual members use the service differently.
+Data analysis of Cyclistic bike-share usage to understand how casual members and annual members use the service differently.
 
 ## Business Problem
 
@@ -8,11 +8,18 @@ Cyclistic wants to increase the number of annual memberships, but it does not ye
 
 ## Business Task 
 
-The task this project looks to acccomplish is to analyze Cyclistic historical bike trip data to identify the behavioral differences between casual riders and annual riders so the marketing team can design a targeted, evidence based campaign to convert Casual riders into Annual members.
+The task this project looks to acccomplish is to analyze Cyclistic historical bike trip data to identify the behavioral differences between casual members and annual members so the marketing team can design a targeted, evidence based campaign to convert Casual riders into Annual members.
 
 ## Audience
 
-Cyclistic executives which includes Lily Moreno, the director of marketing and my manager 
+**Primary:** Lily Moreno (Director of Marketing) and the marketing 
+analytics team — the direct recipients of this analysis, who will 
+use it to shape campaign strategy.
+
+**Secondary:** Cyclistic executives, who must approve any resulting 
+marketing recommendations. Because of this, findings need to be 
+clear, visually compelling, and framed around business impact 
+rather than analytical process.
 
 ## Possible Metrics
 
@@ -23,3 +30,5 @@ Cyclistic executives which includes Lily Moreno, the director of marketing and m
 - from_station_name / start_station_name
 - to_station_name / end_station_name
 - usertype / member_casual
+
+
