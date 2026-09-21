@@ -57,9 +57,8 @@ Each quarter is a separate CSV file in long format.
 - **Original:** Sourced directly from Motivate International Inc.
 - **Comprehensive:** Contains the fields needed to answer the 
   business task, though trip duration must be derived for 2020
-- **Current:** ⚠️ Data is from 2019–2020, several years old — 
-  usage patterns may have shifted since then
-- **Cited:** Official source, publicly documented — see Data Source
+- **Current:** ⚠️ Data is from 2019–2020, several years old and usage patterns may have shifted since then
+- **Cited:** Official source, publicly documented. (see Data Source)
 
 ### Licensing, Privacy, Security, Accessibility
 
