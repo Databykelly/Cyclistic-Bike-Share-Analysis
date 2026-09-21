@@ -75,7 +75,7 @@ Each quarter is a separate CSV file in long format.
   anyone via the link in Data Source — no special access required.
 
 
-  ### Data Integrity Verification
+### Data Integrity Verification
 
 
 The following checks will be performed before analysis:
