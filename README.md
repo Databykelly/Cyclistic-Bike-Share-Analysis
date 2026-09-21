@@ -1,6 +1,6 @@
 # Cyclist Bike Share Analysis 
 
-Data analysis of Cyclistic bike-share usage to understand how casual members and annual members use the service differently.
+Data analysis of Cyclistic bike share usage to understand how casual riders and annual members use the service differently during Q1 in 2019 and 2020
 
 ## Business Problem
 
