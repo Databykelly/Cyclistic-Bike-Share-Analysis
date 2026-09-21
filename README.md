@@ -72,8 +72,7 @@ Each quarter is a separate CSV file in long format.
   public S3 bucket via HTTPS, requiring no login or credentials, 
   and stored locally for analysis.
 - **Accessibility:** Data is freely and publicly available to 
-  anyone via the link in Data Source — no special access required.
-
+  anyone via the link in Data Source.
 
 ### Data Integrity Verification
 
