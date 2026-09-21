@@ -13,7 +13,7 @@ The task this project looks to acccomplish is to analyze Cyclistic historical bi
 ## Audience
 
 **Primary:** Lily Moreno (Director of Marketing) and the marketing 
-analytics team — the direct recipients of this analysis, who will 
+analytics team, the direct recipients of this analysis, who will 
 use it to shape campaign strategy.
 
 **Secondary:** Cyclistic executives, who must approve any resulting 
