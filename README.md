@@ -67,9 +67,7 @@ Each quarter is a separate CSV file in long format.
   use for analysis provided the source is credited (see Data Source).
 - **Privacy:** No personally identifiable information (names, 
   addresses, payment details) is included. Ride-level data is 
-  anonymized. Note: the 2019 file includes `gender` and `birthyear`, 
-  which are demographic fields — these will be treated carefully 
-  and are not essential to the core analysis.
+  anonymized.
 - **Security:** Files were downloaded directly from the official 
   public S3 bucket via HTTPS, requiring no login or credentials, 
   and stored locally for analysis.
