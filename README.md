@@ -16,10 +16,10 @@ Cyclistic executives which includes Lily Moreno, the director of marketing and m
 
 ## Possible Metrics
 
-Tripduration (2019)  started_at − ended_at (2020, derived)	Average / median trip duration, by rider type
-trip_id / ride_id	Count of trips, by rider type
-start_time / started_at	Day-of-week distribution, by rider type
-start_time / started_at	Hour-of-day distribution, by rider type
-from_station_name / start_station_name	Most popular start stations, by rider type
-to_station_name / end_station_name	Most popular end stations, by rider type
-usertype / member_casual	The grouping variable — everything above is split by this
+- tripduration / started_at − ended_at
+- trip_id / ride_id
+- start_time / started_at
+- start_time / started_at
+- from_station_name / start_station_name
+- to_station_name / end_station_name
+- usertype / member_casual
