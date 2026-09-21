@@ -30,3 +30,74 @@ rather than analytical process.
 - usertype / member_casual **could be used as comparison variable**
 
 
+## Prepare
+
+### Data Source 
+
+This analysis uses two quarters of Divvy trip data:
+- **2019 Q1** (Jan–Mar 2019)
+- **2020 Q1** (Jan–Mar 2020)
+
+Data was downloaded from the official Divvy trip data repository, 
+provided by Motivate International Inc. under license to the 
+City of Chicago:  
+https://divvy-tripdata.s3.amazonaws.com/index.html
+
+This project analyzes only these two quarters, chosen to allow 
+a direct year over year comparison for the same three month 
+period (Q1), while keeping the dataset manageable in scope.
+
+### Data Organization
+
+Each quarter is a separate CSV file in long format (one row per 
+ride). The 2019 Q1 and 2020 Q1 files use different column names 
+and fields (e.g., `usertype` vs `member_casual`, `tripduration` 
+missing in 2020), which will be standardized during Process.
+
+### ROCCC Check
+
+- **Reliable:** Raw ride-level data, not pre-aggregated or altered
+- **Original:** Sourced directly from Motivate International Inc.
+- **Comprehensive:** Contains the fields needed to answer the 
+  business task, though trip duration must be derived for 2020
+- **Current:** ⚠️ Data is from 2019–2020, several years old — 
+  usage patterns may have shifted since then
+- **Cited:** Official source, publicly documented — see Data Source
+
+### Licensing, Privacy, Security, Accessibility
+
+- **Licensing:** Data is made publicly available by Divvy/Motivate 
+  International Inc. under their public data license, which permits 
+  use for analysis provided the source is credited (see Data Source).
+- **Privacy:** No personally identifiable information (names, 
+  addresses, payment details) is included. Ride-level data is 
+  anonymized. Note: the 2019 file includes `gender` and `birthyear`, 
+  which are demographic fields — these will be treated carefully 
+  and are not essential to the core analysis.
+- **Security:** Files were downloaded directly from the official 
+  public S3 bucket via HTTPS, requiring no login or credentials, 
+  and stored locally for analysis.
+- **Accessibility:** Data is freely and publicly available to 
+  anyone via the link in Data Source — no special access required.
+
+
+  ### Data Integrity Verification
+
+
+The following checks will be performed before analysis:
+
+- Row counts per file, to confirm the data loaded completely
+- Column headers, to confirm they match the expected schema
+- Missing/null values in key fields such as start/end time and rider type
+- Duplicate ride IDs
+- Invalid or logically inconsistent timestamps
+- Zero or unusually long ride durations
+- Unexpected rider-type categories
+
+### Known Problems with the Data
+
+- Schema differs between 2019 Q1 and 2020 Q1 (see Data Organization), 
+  requiring standardization before combined analysis
+- `tripduration` is not provided in 2020 and must be calculated
+- Data is several years old (2019–2020), so findings may not fully 
+  reflect current ridership behavior
