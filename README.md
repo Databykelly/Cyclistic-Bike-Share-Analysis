@@ -79,13 +79,23 @@ Each quarter is a separate CSV file in long format.
 
 The following checks will be performed before analysis:
 
-- Row counts per file, to confirm the data loaded completely
-- Column headers, to confirm they match the expected schema
-- Missing/null values in key fields such as start/end time and rider type
-- Duplicate ride IDs
-- Invalid or logically inconsistent timestamps
-- Zero or unusually long ride durations
-- Unexpected rider-type categories
+- Row count, to confirm the dataset loaded completely
+- Column structure, to identify the fields available in the dataset
+- Missing values, to identify incomplete records
+- Duplicate ride IDs, to check for repeated ride records
+- Timestamp consistency, to ensure ride end times occur after start times
+- Ride-duration anomalies, to identify zero-duration or unusually long rides
+- Rider-type categories, to identify unexpected or inconsistent categories
+
+### 2019 Q1 Integrity Check Summary
+
+- The dataset contains **365,069 ride records**.
+- The column names contain the **required variables for the planned analysis**.
+- I found **no duplicate ride IDs**, meaning each recorded ride had a unique ID.
+- I found **no problems with the ride times**; every ride had an end time after its start time.
+- I found **no zero-duration rides or rides lasting longer than 24 hours**, so there were no unusual ride-duration values based on these checks.
+- Some **demographic information was missing**: 19,711 records had no `gender` value and 18,023 had no `birthyear` value.
+- The rider type field contained only **`Subscriber` and `Customer`**.
 
 ### Known Problems with the Data
 
